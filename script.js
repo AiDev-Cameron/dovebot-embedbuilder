@@ -12,7 +12,7 @@ function generateCommand() {
     const timestamp = document.getElementById('timestamp').value.trim();
     const fields = document.getElementById('fields').value.trim();
 
-    let command = '!ce ';
+    let command = '';
 
     if (title) command += ` {title: ${title}}`;
     if (description) command += `$v{description: ${description}}`;
